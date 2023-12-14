@@ -1,0 +1,152 @@
+main{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+    font-size: var(--tamaño-muy-grande);
+    font-weight: 600;
+    color: var(--colorTexto);
+    text-align: center;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 80vw;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    margin: var(--tamaño-muy-grande);
+}
+section div{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+
+.img-carrito{
+    display: grid;
+    grid-template-areas: "img-principal"
+                         "img-secundaria";
+    gap: 1rem;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-carrito img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-principal{
+    grid-area: img-principal;
+}
+
+.img-secundaria{
+    grid-area: img-secundaria;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.talla-comprar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.talla-comprar select{
+    width: 50%;
+    border: 1px solid var(--colorFondo3);
+    border-radius: 0.45em;
+    font-family: "Poppins";
+    font-size: var(--tamaño-grande);
+    cursor: pointer;
+}
+.añadirCarrito{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+.carrito-contenido{
+  height: 50%;
+}
+
+.button {
+    width: 100px;
+    height: 35px;
+    background: var(--colorFondo3);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Poppins";
+    transition: background 0.3s;
+}
+  
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    background: #222;
+    cursor: pointer;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+
+
+@media screen and (max-width: 768px){
+    section{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .img-carrito{
+        width: 100%;
+        height: 100%;
+    }
+    .img-secundaria{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .talla-comprar{
+        grid-template-columns: 1fr;
+    }
+}
