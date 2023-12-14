@@ -38,13 +38,6 @@ h1{
   	justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  	.hero {
-    	grid-template-columns: 1fr;
-    	height: 100vh;
-  	}
-}
-
 .hero-content {
   	grid-area: hero-content;
   	max-width: 50vw;
@@ -111,6 +104,15 @@ h1{
 	align-items: center;
 }
   
+.oferta-precio{
+	color: var(--colorPrincipal);
+	font-size: var(--font-size-mediano);
+}
+
+/* FIN OFERTAS */
+
+/* PRODUCTOS */
+
 .producto{
 	background-color: var(--colorFondo);
 	border-radius: 25px 25px;
@@ -174,16 +176,14 @@ h1{
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .tachado{
 	text-decoration: line-through;
 }
-.oferta-precio{
-	color: var(--colorPrincipal);
-	font-size: var(--font-size-mediano);
-}
 
+/* FIN PRODUCTOS */
 /* BOTON COMPRAR */
 
 .button {
@@ -241,8 +241,8 @@ h1{
 .button:hover .icon {
 	top: 0;
 }
-/* Redes */
 
+/* Redes */
 .redes{
  	display: grid;
  	margin-top: var(--tamaño-muy-grande);
@@ -291,8 +291,9 @@ h1{
     color: var(--colorPrincipal);
 }
 
+/* FIN REDES */
 
-
+/*SLIDER AUTOMATICO*/
 
 @keyframes slide {
 	0% { transform: translateX(0); }
@@ -412,6 +413,8 @@ h1{
 	}
 }
 
+
+/*SLIDER MANUAL*/
 
 .slider2 {
     position: relative;

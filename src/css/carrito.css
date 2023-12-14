@@ -19,10 +19,8 @@ section{
     gap: 1rem;
     margin: var(--tamaño-muy-grande);
 }
-section div{
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-}
+
+/* CARRITO */
 
 .img-carrito{
     display: grid;
@@ -57,7 +55,6 @@ section div{
     width: 100%;
     height: 100%;
     align-items: center;
-    justify-items: center;
 }
 
 .talla-comprar select{
@@ -72,6 +69,7 @@ section div{
     width: 100%;
     height: 100%;
     padding: 2rem;
+    overflow: hidden;
 }
 .carrito-contenido{
   height: 50%;
@@ -93,46 +91,46 @@ section div{
     align-items: center;
     justify-content: center;
 }
-  .text,.icon {
+.text,.icon {
     overflow: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     color: #fff;
-  }
-  
-  .text {
+}
+
+.text {
     top: 0
-  }
-  
-  .text,.icon {
+}
+
+.text,.icon {
     transition: top 0.5s;
-  }
+}
   
-  .icon {
+.icon {
     color: #fff;
     top: 100%;
     display: flex;
     font-size: larger;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .button:hover {
+.button:hover {
     background: #222;
     cursor: pointer;
-  }
+}
   
-  .button:hover .text {
+.button:hover .text {
     top: -100%;
-  }
+}
   
-  .button:hover .icon {
+.button:hover .icon {
     top: 0;
-  }
+}
   
-
+/* MEDIA QUERYS */
 
 @media screen and (max-width: 768px){
     section{

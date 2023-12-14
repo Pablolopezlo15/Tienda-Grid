@@ -1,138 +1,147 @@
 h1{
-  font-size: var(--tamaño-muy-grande);
-  color: var(--colorTexto);
-  text-align: center;
+    font-size: var(--tamaño-muy-grande);
+    color: var(--colorTexto);
+    text-align: center;
 }
 .container{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
 
 }
+
+/* CONTAINER PRINCIPAL */
+
 .productos{
-  display: grid;
-  width: 80vw;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--tamaño-grande);
-  margin-top: var(--tamaño-muy-grande);
-  margin-bottom: var(--tamaño-muy-grande);
-  justify-content: center;
-  align-items: center;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--tamaño-grande);
+    margin-top: var(--tamaño-muy-grande);
+    margin-bottom: var(--tamaño-muy-grande);
+    justify-content: center;
+    align-items: center;
 }
+
+/* EMPIEZA PRODUCTOS */
 
 .producto{
-  height: 100%;
-  display: grid;
-  grid-template-areas: 
-    "producto-img"
-    "producto-content";
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+      "producto-img"
+      "producto-content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 .producto-img{
-  grid-area: producto-img;
-  height: 350px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: var(--tamaño-muy-grande);
+    grid-area: producto-img;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--tamaño-muy-grande);
 }
 
 .producto-img img:hover{
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-  scale: 1.1;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    scale: 1.1;
 }
 
 .producto-img img{
-  height: 100%;
-  width: auto;
-  transition: transform 0.3s ease-in-out;
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
 
 } 
 
 .producto-content{
-  grid-area: producto-content;
-  margin-top: var(--tamaño-muy-grande);
+    grid-area: producto-content;
+    margin-top: var(--tamaño-muy-grande);
 }
 
 .producto-content h2{
-  font-size: var(--tamaño-grande);
-  font-weight: 600;
-  color: var(--colorTexto);
+    font-size: var(--tamaño-grande);
+    font-weight: 600;
+    color: var(--colorTexto);
 }
 
 .precio{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--tamaño-pequeño);
-  justify-content: space-between;
-  align-items: center;
-  margin-top: var(--tamaño-mediano);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--tamaño-pequeño);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--tamaño-mediano);
 }
 
 .añadirCarrito{
-  display: grid;
-  justify-content: center;
-  align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
 }
+
+/* TERMINA PRODUCTOS */
 
 /* BOTON COMPRAR */
 
 .button {
-  width: 100px;
-  height: 35px;
-  background: var(--colorFondo3);
-  position: relative;
-  text-align: center;
-  border-radius: 0.45em;
-  font-family: "Poppins";
-  transition: background 0.3s;
+    width: 100px;
+    height: 35px;
+    background: var(--colorFondo3);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Poppins";
+    transition: background 0.3s;
 }
 
 .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .text,.icon {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  color: #fff;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
 }
 
 .text {
-  top: 0
+    top: 0
 }
 
 .text,.icon {
-  transition: top 0.5s;
+    transition: top 0.5s;
 }
 
 .icon {
-  color: #fff;
-  top: 100%;
-  display: flex;
-  font-size: larger;
-  align-items: center;
-  justify-content: center;
+    color: #fff;
+    top: 100%;
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover {
-  background: #222;
-  cursor: pointer;
+    background: #222;
+    cursor: pointer;
 }
 
 .button:hover .text {
-  top: -100%;
+    top: -100%;
 }
 
 .button:hover .icon {
-  top: 0;
+    top: 0;
 }
 
 /* FIN BOTON COMPRAR */
