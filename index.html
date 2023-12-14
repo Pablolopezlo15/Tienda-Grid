@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css"></link>
-    <script src="src/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -153,15 +152,35 @@
 
         </section>
 
+        <section>
+          <div class="slider2">
+            <div class="slides2">
+                <div class="slide2" id="slide1">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F68%2Fb7%2F68b7f5141593f5f7e1953881341219ea063809ad.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]">
+                </div>
+                <div class="slide2" id="slide2">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fda%2Fb0%2Fdab06f35d4a432e9daa3a06429c9cf499190d3e5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]">
+                </div>
+                <div class="slide2" id="slide3">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F51%2Fca%2F51cace79660c4cc96f847279d78d993c35524c8a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        </section>
+
         <section class="redes">
             <div class="redes-content">
-                <h2>¡Síguenos en las redes <span>sociales</span>!</h2>
-                <div>
-                    <a href="#"><i class="ri-facebook-fill"></i></a>
-                    <a href="#"><i i class="ri-instagram-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-fill"></i></a>
-                    <a href="#"><i class="ri-youtube-fill"></i></a>
-                </div>
+              <h2 class="text-redes">
+                ¡Síguenos en las redes <span>sociales</span>!
+             </h2>
+             <div class="social-icons">
+              <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+              <a href="#" class="social-icon"><i i class="ri-instagram-fill"></i></a>
+              <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+              <a href="#" class="social-icon"><i class="ri-youtube-fill"></i></a>
+          </div>
             </div>
         </section>
 
@@ -223,6 +242,7 @@
               </div>
           </div>
     </footer>
+    <script src="src/js/script.js"></script>
 
 </body>
 

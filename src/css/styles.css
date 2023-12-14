@@ -109,9 +109,9 @@ h1{
 	margin-bottom: var(--tamaño-muy-grande);
 	justify-items: center;
 	align-items: center;
-  }
+}
   
-  .producto{
+.producto{
 	background-color: var(--colorFondo);
 	border-radius: 25px 25px;
 	height: 100%;
@@ -124,43 +124,43 @@ h1{
 	  "producto-content";
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-  }
+}
   
-  .producto-img{
+.producto-img{
 	grid-area: producto-img;
 	height: 350px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	margin-top: var(--tamaño-muy-grande);
-  }
+}
   
-  .producto-img img:hover{
+.producto-img img:hover{
 	cursor: pointer;
 	transition: all 0.25s ease-in-out;
 	scale: 1.1;
-  }
+}
   
-  .producto-img img{
+.producto-img img{
 	height: 100%;
 	width: auto;
 	transition: transform 0.3s ease-in-out;
   
-  } 
+} 
   
-  .producto-content{
+.producto-content{
 	grid-area: producto-content;
 	width: 65%;
 	margin-top: var(--tamaño-muy-grande);
-  }
+}
   
-  .producto-content h2{
+.producto-content h2{
 	font-size: var(--tamaño-grande);
 	font-weight: 600;
 	color: var(--colorTexto);
-  }
+}
   
-  .precio{
+.precio{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: var(--tamaño-pequeño);
@@ -168,21 +168,21 @@ h1{
 	justify-items: center;
 	align-items: center;
 	margin-top: var(--tamaño-mediano);
-  }
+}
   
-  .añadirCarrito{
+.añadirCarrito{
 	display: grid;
 	justify-content: center;
 	align-items: center;
-  }
+}
 
-  .tachado{
+.tachado{
 	text-decoration: line-through;
-  }
-  .oferta-precio{
+}
+.oferta-precio{
 	color: var(--colorPrincipal);
 	font-size: var(--font-size-mediano);
-  }
+}
 
 /* BOTON COMPRAR */
 
@@ -252,9 +252,6 @@ h1{
 }
 
 .redes-content{
-	background-image: url(https://panatta.es/wp-content/uploads/IMG_2378-848x450.jpg);
-  	background-repeat: no-repeat;
-	background-size: cover;
 	grid-area: redes-content;
   	width: 80vw;
 	height: 50vh;
@@ -262,20 +259,38 @@ h1{
 	justify-content: center;
 }
 
-.redes-content div{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-content: center;
-	align-items: center;
+
+.text-redes{
+	color: var(--colorTexto); 
+	text-align: center; 
+	font-size: var(--font-size-grande); 
+	font-weight: bold; 
+	margin-bottom: var(--tamaño-grande);
 
 }
-/* .redes-img {
-	grid-area: redes-img;
-	background-image: url(https://panatta.es/wp-content/uploads/IMG_2378-848x450.jpg);
-  	background-repeat: no-repeat;
-	height: 50vh;
-  	max-width: 100%;
-} */
+.text-redes span{
+	color: var(--colorPrincipal);
+
+}
+
+.social-icons {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+    gap: var(--tamaño-mediano);
+}
+
+.social-icon {
+    font-size: var(--font-size-muy-grande);
+	color: var(--colorTexto);
+	text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--colorPrincipal);
+}
+
 
 
 
@@ -398,3 +413,55 @@ h1{
 }
 
 
+.slider2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.slides2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide2 {
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2 img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@keyframes slide2 {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
